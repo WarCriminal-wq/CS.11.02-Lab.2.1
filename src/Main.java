@@ -15,7 +15,7 @@ public class Main {
         System.out.println(morningGreeting("idiot"));
         System.out.println(afternoonGreeting("idiot"));
         System.out.println(triple("meh"));
-        System.out.println(half(62));
+        System.out.println(half(62.7));
         System.out.println(roundPositiveValueToNearestInteger(42.9)); //wot
         System.out.println(roundNegativeValueToNearestInteger(-1.2));
         //everything's good
@@ -31,19 +31,19 @@ public class Main {
     }
     // 3. morningGreeting
     public static String morningGreeting(String morning){
-        return("早上好 " + morning);
+        return("早上好, " + morning + "!");
     }
     // 4. afternoonGreeting
     public static String afternoonGreeting(String afternoon){
-        return("下午好 "+ afternoon);
+        return("下午好, "+ afternoon + "!");
     }
     // 5. triple
     public static String triple(String meh){
         return(meh + meh + meh);
     }
     // 6. half
-    public static int half(int why){
-        return(why%2);
+    public static double half(double why){
+        return(why/2);
     }
     // 7. roundPositiveValueToNearestInteger
     public static int roundPositiveValueToNearestInteger(double didTheNameReallyHaveToBeThatLong){
